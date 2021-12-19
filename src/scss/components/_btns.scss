@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: $inter-bold, $sans-serif;
+    background-color: $light-brown;
+    color: $white;
+    padding: 25px 38px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s linear;
+    &:hover {
+        opacity: 0.8;
+    }
+}

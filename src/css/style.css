@@ -337,24 +337,415 @@ template {
   display: none;
 }
 
-.heading {
-  font-size: 18px;
+@font-face {
+  font-family: "Inter Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Inter/Inter-Bold.woff2) format("woff2"), url(../fonts/Inter/Inter-Bold.woff) format("woff"), url(../fonts/Inter/Inter-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Inter Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Inter/Inter-Regular.woff2) format("woff2"), url(../fonts/Inter/Inter-Regular.woff) format("woff"), url(../fonts/Inter/Inter-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Righteous Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Righteous/Righteous-Regular.woff2) format("woff2"), url(../fonts/Righteous/Righteous-Regular.woff) format("woff"), url(../fonts/Righteous/Righteous-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Urbanist Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Urbanist/Urbanist-Medium.woff2) format("woff2"), url(../fonts/Urbanist/Urbanist-Medium.woff) format("woff"), url(../src/fonts/Urbanist/Urbanist-Medium.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Urbanist SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/Urbanist/Urbanist-SemiBold.woff2) format("woff2"), url(../fonts/Urbanist/Urbanist-SemiBold.woff) format("woff"), url(../fonts/Urbanist/Urbanist-SemiBold.ttf) format("ttf");
+}
+*:after,
+*:before,
+* {
+  box-sizing: border-box;
 }
 
-.grid {
-  display: grid;
+input,
+textarea {
+  outline: 0;
 }
-.grid--two-columns {
-  grid-template-columns: 1fr 1fr;
+
+textarea {
+  resize: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1950px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Inter Bold", sans-serif;
+  background-color: #C99E71;
+  color: #fff;
+  padding: 25px 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.header {
+  background-color: #14110E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav, .header__controls {
+  width: 50%;
+}
+.header__controls {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__link {
+  padding: 31px 22px;
+  display: inline-block;
+}
+.header__text {
+  font-size: 18px;
+  font-family: "Inter Regular", sans-serif;
+  color: #fff;
+  line-height: 22px;
+  transition: all 0.2s linear;
+}
+.header__text:hover {
+  color: #C99E71;
+}
+
+.nav {
+  display: flex;
+}
+.nav__menu {
   display: flex;
   align-items: center;
 }
-.grid--three-columns {
-  grid-template-columns: 1fr 1fr 1fr;
+.nav__text {
+  font-size: 18px;
+  font-family: "Inter Regular", sans-serif;
+  color: #fff;
+  line-height: 22px;
 }
 
-body {
-  background-color: #eee;
-  font-size: 22px;
-  color: red;
+.hero {
+  background-image: url(../image/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.hero__wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 574px;
+  width: 100%;
+  padding: 150px 0;
+}
+.hero__title {
+  font-family: "Righteous Regular", sans-serif;
+  font-size: 72px;
+  line-height: 94px;
+  color: #fff;
+  margin-bottom: 32px;
+  letter-spacing: 3px;
+}
+.hero__text {
+  font-family: "Urbanist Medium", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  margin-bottom: 88px;
+}
+
+.instruction {
+  background-color: #14110E;
+  padding: 140px 0 70px;
+}
+.instruction__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.instruction__item {
+  width: 31%;
+}
+.instruction img {
+  display: block;
+  width: 100%;
+}
+.instruction__wrap {
+  margin-bottom: 24px;
+}
+.instruction__number {
+  display: inline-block;
+  font-family: "Righteous Regular";
+  font-size: 24px;
+  line-height: 26px;
+  color: #C99E71;
+  margin-right: 12px;
+}
+.instruction__title {
+  display: inline-block;
+  font-family: "Righteous Regular";
+  font-size: 24px;
+  line-height: 26px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.about-us {
+  background-color: #14110E;
+  padding: 70px 0;
+}
+.about-us__grid {
+  display: grid;
+  grid-template-columns: 25% 25% 42%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+.about-us__grid-item-1 {
+  grid-area: 1/1/2/2;
+}
+.about-us__grid-item-2 {
+  grid-area: 2/1/3/2;
+}
+.about-us__grid-item-3 {
+  grid-area: 1/2/3/3;
+}
+.about-us__grid-item-4 {
+  grid-area: 1/3/3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1C1814;
+  padding: 25px 52px;
+}
+.about-us img {
+  display: block;
+  width: 100%;
+}
+.about-us__subtitle {
+  font-family: "Urbanist SemiBold";
+  font-size: 18px;
+  line-height: 20px;
+  color: #C99E71;
+  margin-bottom: 12px;
+}
+.about-us__title {
+  font-family: "Righteous Regular";
+  font-size: 48px;
+  line-height: 62px;
+  color: #fff;
+  margin-bottom: 36px;
+}
+.about-us__text {
+  font-family: "Urbanist Medium";
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.products {
+  padding: 70px 0;
+  background-color: #14110E;
+}
+.products__subtitle {
+  font-family: "Urbanist SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #C99E71;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.products__title {
+  font-family: "Righteous Regular", sans-serif;
+  font-size: 48px;
+  line-height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.products__slider {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 56px;
+}
+.products__slider .slick-track {
+  width: auto;
+  transform: translate(0);
+}
+.products__slider-link {
+  background-color: #121315;
+  width: 100%;
+  max-width: 30%;
+}
+.products__slider-body {
+  text-align: center;
+  padding: 48px 48px 40px;
+}
+.products__slider-image {
+  margin-bottom: 38px;
+}
+.products__slider img {
+  display: block;
+  width: 100%;
+}
+.products__slider-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.products__slider-text {
+  font-family: "Urbanist Medium", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C99E71;
+  text-transform: uppercase;
+  margin-right: 14px;
+}
+.products__slider-title {
+  font-family: "Righteous Regular", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.products__slider-price {
+  font-family: "Inter Regular", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.products__stars {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.products__stars-item {
+  margin-right: 8px;
+}
+.products__stars-item:last-child {
+  margin-right: 0;
+}
+.products__btn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.brown {
+  font-family: "Urbanist SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #C99E71;
+  text-transform: uppercase;
+}
+
+.technics {
+  background-color: #1C1814;
+  padding: 70px 0;
+}
+.technics__wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.technics__right {
+  padding-left: 100px;
+  max-width: 501px;
+  width: 100%;
+}
+.technics__image {
+  display: flex;
+  justify-content: center;
+}
+.technics__image img {
+  display: block;
+  width: 100%;
+}
+.technics__title {
+  font-family: "Righteous Regular";
+  font-size: 48pxpx;
+  line-height: 50px;
+  color: #fff;
+  margin-bottom: 36px;
+}
+.technics__text {
+  font-family: "Urbanist Medium";
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 36px;
+}
+.technics__btn {
+  display: inline-block;
 }

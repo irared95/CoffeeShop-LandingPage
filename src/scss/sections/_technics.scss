@@ -1,0 +1,44 @@
+.technics {
+    background-color: $second-brown;
+    padding: 70px 0;
+    &__wrap {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    // &__left,
+    // &__right {
+    //     width: 50%;
+    // }
+    &__right {
+        padding-left: 100px;
+        max-width: 501px;
+        width: 100%;
+    }
+    &__image {
+        display: flex;
+        justify-content: center;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__title {
+        font-family: $righteous-regular;
+        font-size: 48pxpx;
+        line-height: 50px;
+        color: $white;
+        margin-bottom: 36px;
+    }
+    &__text {
+        font-family: $urbanist-medium;
+        font-size: 16px;
+        line-height: 28px;
+        color: $white;
+        margin-bottom: 36px;
+    }
+    &__btn {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,35 @@
+.instruction {
+    background-color: $dark-brown;
+    padding: 140px 0 70px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    &__item {
+        width: 31%;
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+    &__wrap {
+        margin-bottom: 24px;
+    }
+    &__number {
+        display: inline-block;
+        font-family: $righteous-regular;
+        font-size: 24px;
+        line-height: 26px;
+        color: $light-brown;
+        margin-right: 12px;
+    }
+    &__title {
+        display: inline-block;
+        font-family: $righteous-regular;
+        font-size: 24px;
+        line-height: 26px;
+        color: white;
+        letter-spacing: 2px;
+    }
+}

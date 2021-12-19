@@ -1,0 +1,109 @@
+.products {
+    padding: 70px 0;
+    background-color: $dark-brown;
+    &__subtitle {
+        font-family: $urbanist-semiBold, $sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: $light-brown;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    &__title {
+        font-family: $righteous-regular, $sans-serif;
+        font-size: 48px;
+        line-height: 50px;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-bottom: 56px;
+        .slick-track {
+            width: auto;
+            transform: translate(0);
+        }
+        // &.slick-initialized .slick-slide {
+        //     display: flex;
+        // }
+        // .slick-list {
+        //     margin-left: -30px;
+        //     overflow: hidden;
+        // }
+        &-link {
+            background-color: $dark-blue;
+            width: 100%;
+            max-width: 30%;
+        }
+        &-body {
+            text-align: center;
+            padding: 48px 48px 40px;
+        }
+        &-image {
+            margin-bottom: 38px;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+        &-top {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        &-text {
+            font-family: $urbanist-medium, $sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            color: $light-brown;
+            text-transform: uppercase;
+            margin-right: 14px;
+        }
+        &-title {
+            font-family: $righteous-regular, $sans-serif;
+            font-size: 24px;
+            line-height: 26px;
+            color: $white;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        &-price {
+            font-family: $inter-regular, $sans-serif;
+            font-size: 18px;
+            line-height: 20px;
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+    &__stars {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        &-item {
+            margin-right: 8px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.brown {
+    font-family: $urbanist-semiBold, $sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: $light-brown;
+    text-transform: uppercase;
+}

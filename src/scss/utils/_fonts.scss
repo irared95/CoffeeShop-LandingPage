@@ -1,23 +1,39 @@
 @font-face {
-    font-family: 'Poppins Bold';
+    font-family: 'Inter Bold';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(../fonts/poppins/Poppins-Bold.woff2) format('woff2'), url(../fonts/poppins/Poppins-Bold.woff) format('woff'), url(../fonts/poppins/Poppins-Bold.ttf) format('ttf');
+    src: url(../fonts/Inter/Inter-Bold.woff2) format('woff2'), url(../fonts/Inter/Inter-Bold.woff) format('woff'), url(../fonts/Inter/Inter-Bold.ttf) format('ttf');
 }
 
 @font-face {
-    font-family: 'Poppins Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(../fonts/poppins/Poppins-Medium.woff2) format('woff2'), url(../fonts/poppins/Poppins-Medium.woff) format('woff'), url(../fonts/poppins/Poppins-Medium.ttf) format('ttf');
-}
-
-@font-face {
-    font-family: 'Poppins Regular';
+    font-family: 'Inter Regular';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(../fonts/poppins/Poppins-Regular.woff2) format('woff2'), url(../fonts/poppins/Poppins-Regular.woff) format('woff'), url(../fonts/poppins/Poppins-Regular.ttf) format('ttf');
+    src: url(../fonts/Inter/Inter-Regular.woff2) format('woff2'), url(../fonts/Inter/Inter-Regular.woff) format('woff'), url(../fonts/Inter/Inter-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Righteous Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Righteous/Righteous-Regular.woff2) format('woff2'), url(../fonts/Righteous/Righteous-Regular.woff) format('woff'), url(../fonts/Righteous/Righteous-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/Urbanist/Urbanist-Medium.woff2) format('woff2'), url(../fonts/Urbanist/Urbanist-Medium.woff) format('woff'), url(../src/fonts/Urbanist/Urbanist-Medium.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/Urbanist/Urbanist-SemiBold.woff2) format('woff2'), url(../fonts/Urbanist/Urbanist-SemiBold.woff) format('woff'), url(../fonts/Urbanist/Urbanist-SemiBold.ttf) format('ttf');
 }

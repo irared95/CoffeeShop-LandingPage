@@ -4,7 +4,7 @@
 @import "./utils/mixins";
 @import "./utils/my-normalize";
 .container {
-    max-width: 1180px;
+    max-width: 1950px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -14,3 +14,8 @@
 @import "./components/btns";
 @import "./components/footer";
 @import "./components/header";
+@import "./sections/hero";
+@import "./sections/instruction";
+@import "./sections/about-us";
+@import "./sections/products";
+@import "./sections/technics";

@@ -1,0 +1,30 @@
+.hero {
+    background-image: url(../image/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    &__wrap {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: 574px;
+        width: 100%;
+        padding: 150px 0;
+    }
+    &__title {
+        font-family: $righteous-regular, $sans-serif;
+        font-size: 72px;
+        line-height: 94px;
+        color: $white;
+        margin-bottom: 32px;
+        letter-spacing: 3px;
+    }
+    &__text {
+        font-family: $urbanist-medium, $sans-serif;
+        font-size: 20px;
+        line-height: 36px;
+        color: $white;
+        margin-bottom: 88px;
+    }
+}

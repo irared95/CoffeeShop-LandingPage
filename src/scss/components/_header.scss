@@ -1,0 +1,42 @@
+.header {
+    background-color: $dark-brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav,
+    &__controls {
+        width: 50%;
+    }
+    &__controls {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__link {
+        padding: 31px 22px;
+        display: inline-block;
+    }
+    &__text {
+        font-size: 18px;
+        font-family: $inter-regular, $sans-serif;
+        color: $white;
+        line-height: 22px;
+        transition: all .2s linear;
+        &:hover {
+            color: $light-brown;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        font-size: 18px;
+        font-family: $inter-regular, $sans-serif;
+        color: $white;
+        line-height: 22px;
+    }
+}

@@ -1,3 +1,4 @@
+@import "./libs";
 @import './utils/reset';
 @import "./utils/fonts";
 @import "./utils/variable";
@@ -10,6 +11,10 @@
     padding: 0 15px;
 }
 
+body {
+    background-color: $dark-brown;
+}
+
 @import "./components/dots";
 @import "./components/btns";
 @import "./components/footer";
@@ -19,3 +24,5 @@
 @import "./sections/about-us";
 @import "./sections/products";
 @import "./sections/technics";
+@import "./sections/menu";
+@import "./sections/reviews";

@@ -1,11 +1,16 @@
 .technics {
-    background-color: $second-brown;
     padding: 70px 0;
+    &__container{
+        max-width: 1200px;
+    }
+
     &__wrap {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
+        padding: 70px 0;
+        background-color: $second-brown;
     }
     // &__left,
     // &__right {
@@ -13,7 +18,7 @@
     // }
     &__right {
         padding-left: 100px;
-        max-width: 501px;
+        max-width: 638px;
         width: 100%;
     }
     &__image {
@@ -26,7 +31,7 @@
     }
     &__title {
         font-family: $righteous-regular;
-        font-size: 48pxpx;
+        font-size: 48px;
         line-height: 50px;
         color: $white;
         margin-bottom: 36px;
@@ -37,6 +42,7 @@
         line-height: 28px;
         color: $white;
         margin-bottom: 36px;
+        text-transform: capitalize;
     }
     &__btn {
         display: inline-block;

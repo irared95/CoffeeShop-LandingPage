@@ -1,7 +1,7 @@
 .reviews{
   padding: 70px 0;
   &__container{
-    max-width: 1200px;
+    max-width: 1236px;
   }
   &__subtitle {
     font-family: $urbanist-semiBold, $sans-serif;
@@ -18,6 +18,85 @@
     color: $white;
     text-align: center;
     margin-bottom: 56px;
+  }
+  &__slider{
+    display: flex;
+    justify-content: space-between;
+    &-item{
+      background-color: $second-brown;
+      width: 48%;
+      padding: 40px;
+      margin: 0 18px;
+    }
+  }
+  &__top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    font-family: $urbanist-medium, $sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: $white;
+    opacity: 0.8;
+    text-transform: capitalize;
+    margin-left: 24px;
+  }
+
+  &__name{
+    font-family: $urbanist-medium, $sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: $white;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+  }
+  &__position{
+    font-family: $urbanist-medium, $sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: $white;
+    opacity: 0.5;
+    text-transform: capitalize;
+  }
+  &__stars {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    &-item {
+      margin-right: 4px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__arrow {
+    position: absolute;
+    bottom: -75px;
+    z-index: 1;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-prev {
+      left: 88%;
+      margin-left: -25px;
+    }
+    &-next {
+      right: 2%;
+    }
+    &:hover{
+      background-color: $light-brown;
+    }
   }
 
 }

@@ -901,7 +901,7 @@ body {
   padding: 70px 0;
 }
 .reviews__container {
-  max-width: 1200px;
+  max-width: 1236px;
 }
 .reviews__subtitle {
   font-family: "Urbanist SemiBold", sans-serif;
@@ -918,4 +918,152 @@ body {
   color: #fff;
   text-align: center;
   margin-bottom: 56px;
+}
+.reviews__slider {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews__slider-item {
+  background-color: #1C1814;
+  width: 48%;
+  padding: 40px;
+  margin: 0 18px;
+}
+.reviews__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.reviews__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews__text {
+  font-family: "Urbanist Medium", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  opacity: 0.8;
+  text-transform: capitalize;
+  margin-left: 24px;
+}
+.reviews__name {
+  font-family: "Urbanist Medium", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+.reviews__position {
+  font-family: "Urbanist Medium", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+.reviews__stars {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.reviews__stars-item {
+  margin-right: 4px;
+}
+.reviews__stars-item:last-child {
+  margin-right: 0;
+}
+.reviews__arrow {
+  position: absolute;
+  bottom: -75px;
+  z-index: 1;
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__arrow-prev {
+  left: 88%;
+  margin-left: -25px;
+}
+.reviews__arrow-next {
+  right: 2%;
+}
+.reviews__arrow:hover {
+  background-color: #C99E71;
+}
+
+.reservation {
+  padding: 70px 0;
+}
+.reservation__container {
+  max-width: 1200px;
+}
+.reservation__subtitle {
+  font-family: "Urbanist SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #C99E71;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.reservation__title {
+  font-family: "Righteous Regular", sans-serif;
+  font-size: 48px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.reservation__wrapper {
+  background-color: #1C1814;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.reservation__left {
+  background-image: url(/image/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 50%;
+}
+.reservation__right {
+  padding: 72px 48px;
+  width: 50%;
+}
+.reservation__field:not(:last-child) {
+  margin-bottom: 24px;
+}
+.reservation__field:last-child {
+  margin-bottom: 54px;
+}
+.reservation__form {
+  text-align: center;
+}
+.reservation__input {
+  width: 100%;
+  background-color: #14110E;
+  padding: 18px 30px 18px;
+  font-size: 18px;
+  font-family: "Urbanist SemiBold";
+  line-height: 18px;
+  border: 0;
+  color: #fff;
+}
+.reservation__input::placeholder {
+  font-size: 18px;
+  font-family: "Righteous Regular";
+  line-height: 18px;
+  opacity: 0.8;
+  color: #fff;
+}
+.reservation__btn {
+  display: inline-block;
+  text-align: center;
 }

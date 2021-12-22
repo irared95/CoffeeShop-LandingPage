@@ -1,0 +1,21 @@
+.news{
+  padding: 70px 0;
+  &__subtitle {
+    font-family: $urbanist-semiBold, $sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: $light-brown;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  &__title {
+    font-family: $righteous-regular, $sans-serif;
+    font-size: 48px;
+    line-height: 50px;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+}

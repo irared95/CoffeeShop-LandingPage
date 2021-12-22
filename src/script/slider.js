@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
         autoplay: false,
         speed: 300,
         arrows: true,
+        dots: true,
+        dotsClass: 'dots reviews__dots',
         prevArrow: '<div class="reviews__arrow-prev reviews__arrow">' +
                 '<svg xmlns="http://www.w3.org/2000/svg" stroke="white"  width="24" height="24" viewBox="0 0 24 24" fill="none">\n' +
                 '\t<g clip-path="url(#clip0_1_180)">\n' +

@@ -524,6 +524,29 @@ body {
   background-color: #14110E;
 }
 
+.dots {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0;
+  line-height: 0;
+  background-color: #2b2926;
+}
+.dots .slick-active button {
+  background-color: #C99E71;
+}
+.dots button {
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+  transition: all 0.2s linear;
+}
+.dots button:hover {
+  background-color: #C99E71;
+}
+
 .btn {
   display: inline-block;
   font-size: 18px;
@@ -552,6 +575,7 @@ body {
 .header__controls {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .header__link {
   padding: 31px 22px;
@@ -901,7 +925,7 @@ body {
   padding: 70px 0;
 }
 .reviews__container {
-  max-width: 1236px;
+  max-width: 1200px;
 }
 .reviews__subtitle {
   font-family: "Urbanist SemiBold", sans-serif;
@@ -922,12 +946,13 @@ body {
 .reviews__slider {
   display: flex;
   justify-content: space-between;
+  margin: 0 -15px;
 }
 .reviews__slider-item {
   background-color: #1C1814;
-  width: 48%;
+  width: calc(50% - 20px);
   padding: 40px;
-  margin: 0 18px;
+  margin: 0 20px;
 }
 .reviews__top {
   display: flex;
@@ -986,16 +1011,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: stroke, background-color 0.2s linear;
+}
+.reviews__arrow path {
+  stroke: #fff;
 }
 .reviews__arrow-prev {
-  left: 88%;
-  margin-left: -25px;
+  right: 90px;
 }
 .reviews__arrow-next {
-  right: 2%;
+  right: 20px;
 }
 .reviews__arrow:hover {
   background-color: #C99E71;
+}
+.reviews__arrow:hover path {
+  stroke: #1C1814;
+}
+.reviews__dots {
+  position: absolute;
+  bottom: -64px;
+  left: 2%;
 }
 
 .reservation {
@@ -1066,4 +1102,26 @@ body {
 .reservation__btn {
   display: inline-block;
   text-align: center;
+}
+
+.news {
+  padding: 70px 0;
+}
+.news__subtitle {
+  font-family: "Urbanist SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #C99E71;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.news__title {
+  font-family: "Righteous Regular", sans-serif;
+  font-size: 48px;
+  line-height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 56px;
 }

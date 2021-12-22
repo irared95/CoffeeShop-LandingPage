@@ -1,0 +1,24 @@
+.dots {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0;
+  line-height: 0;
+  background-color: #2b2926;
+  .slick-active {
+    button {
+      background-color: $light-brown;
+    }
+  }
+  button {
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: $light-brown;
+    }
+  }
+}

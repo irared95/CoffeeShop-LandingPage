@@ -1,7 +1,7 @@
 .reviews{
   padding: 70px 0;
   &__container{
-    max-width: 1236px;
+    max-width: 1200px;
   }
   &__subtitle {
     font-family: $urbanist-semiBold, $sans-serif;
@@ -22,11 +22,13 @@
   &__slider{
     display: flex;
     justify-content: space-between;
+    margin: 0 -15px;
+    //overflow: hidden;
     &-item{
       background-color: $second-brown;
-      width: 48%;
+      width: calc(50% - 20px);
       padding: 40px;
-      margin: 0 18px;
+      margin: 0 20px;
     }
   }
   &__top{
@@ -87,16 +89,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: stroke, background-color .2s linear;
+    path {
+      stroke: $white;
+    }
     &-prev {
-      left: 88%;
-      margin-left: -25px;
+      right: 90px;
     }
     &-next {
-      right: 2%;
+      right: 20px;
     }
     &:hover{
       background-color: $light-brown;
+      path {
+        stroke: $second-brown;
+      }
     }
+  }
+  &__dots {
+    position: absolute;
+    bottom: -64px;
+    left: 2%;
   }
 
 }

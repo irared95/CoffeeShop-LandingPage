@@ -1,0 +1,89 @@
+.footer{
+  padding: 70px 0 0 0;
+  &__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+  &__container {
+    max-width: 1200px;
+  }
+  &__form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__link {
+    padding: 31px 22px;
+    display: inline-block;
+  }
+  &__logo{
+    margin-right: 15px;
+  }
+  &__text {
+    font-size: 18px;
+    font-family: $inter-regular, $sans-serif;
+    color: $white;
+    line-height: 22px;
+    transition: all .2s linear;
+    &:hover {
+      color: $light-brown;
+    }
+  }
+  &__form{
+    text-align: center;
+    position: relative;
+  }
+  &__input {
+    width: 100%;
+    background-color: $second-brown;
+    border-radius: 36px;
+    padding: 25px 52px 25px;
+    font-size: 18px;
+    font-family: $urbanist-semiBold;
+    line-height: 18px;
+    border: 0;
+    color: $white;
+
+    &::placeholder {
+      font-size: 16px;
+      font-family: $urbanist-medium;
+      line-height: 18px;
+      opacity: 0.8;
+      color: $white;
+      text-transform: capitalize;
+    }
+  }
+  &__btn {
+    position: absolute;
+    right: 12px;
+    z-index: 3;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-brown;
+    transition: all .2s linear;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__copyright{
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $second-brown;
+    &-text{
+      font-family: $urbanist-medium, $sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      color: $white;
+    }
+  }
+}

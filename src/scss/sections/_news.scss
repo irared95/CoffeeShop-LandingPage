@@ -1,5 +1,8 @@
 .news{
   padding: 70px 0;
+  &__wrap{
+    padding: 24px;
+  }
   &__subtitle {
     font-family: $urbanist-semiBold, $sans-serif;
     font-size: 18px;
@@ -17,5 +20,53 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 56px;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    &-link {
+      display: block;
+      background-color: $second-brown;
+      width: 100%;
+      max-width: 32%;
+      margin: 0 18px;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+    &-title {
+      font-family: $righteous-regular, $sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      color: $white;
+      text-transform: capitalize;
+      margin-bottom: 33px;
+    }
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    &-bottom{
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__by,
+  &__date{
+    font-family: $urbanist-medium, $sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: $white;
+  }
+  &__more{
+    font-family: $urbanist-medium, $sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: $light-brown;
+    margin-right: 20px;
   }
 }

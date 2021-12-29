@@ -10937,5 +10937,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         ]
     })
+
+    $('.news__slider--js').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        speed: 300,
+        arrows: false,
+    });
+
 });
 

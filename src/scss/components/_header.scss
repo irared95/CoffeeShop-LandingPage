@@ -1,20 +1,20 @@
 .header {
     background-color: $dark-brown;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include breakpoint($tablet-bp) {
+        display: flex;
+        align-items: center;
+    }
     &__nav,
     &__controls {
         width: 50%;
     }
-    &__controls {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
+
     &__link {
         padding: 31px 22px;
         display: inline-block;
+        @include breakpoint($tablet-bp) {
+            padding: 15px 22px;
+        }
     }
     &__text {
         font-size: 18px;
@@ -26,18 +26,98 @@
             color: $light-brown;
         }
     }
+
+    &__menu{
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        &.active{
+            display: flex;
+        }
+        @include breakpoint($tablet-bp) {
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            background-color: black;
+            //position: absolute;
+            //top: 0;
+            //right: 0;
+            //left: 0;
+            //background-color: #959f70;
+            //z-index: 5;
+            //display: flex;
+            //flex-direction: column;
+            //padding: 35px;
+        }
+    }
 }
+
 
 .nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     &__menu {
         display: flex;
         align-items: center;
+        @include breakpoint($tablet-bp) {
+            flex-direction: column;
+        }
     }
     &__text {
         font-size: 18px;
         font-family: $inter-regular, $sans-serif;
         color: $white;
         line-height: 22px;
+    }
+
+}
+.burger {
+    display: none;
+    @include breakpoint($tablet-bp) {
+        display: block;
+        color: $white;
+        font-size: 55px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        z-index: 6;
+    }
+    @include breakpoint($mobile-bp) {}
+}
+
+.logo{
+    display: block;
+    &--mobile{
+        display: none;
+        @include breakpoint($tablet-bp) {
+            display: block;
+        }
+    }
+    @include breakpoint($tablet-bp) {
+        &--desktop{
+            display: none;
+        }
+    }
+
+}
+
+.controls {
+    &--mobile{
+        display: none;
+        @include breakpoint($tablet-bp) {
+            display: flex;
+        }
+    }
+    @include breakpoint($tablet-bp) {
+        &--desktop{
+            display: none;
+        }
     }
 }

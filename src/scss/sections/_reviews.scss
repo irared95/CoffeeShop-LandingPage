@@ -3,42 +3,36 @@
   &__container{
     max-width: 1200px;
   }
-  &__subtitle {
-    font-family: $urbanist-semiBold, $sans-serif;
-    font-size: 18px;
-    line-height: 20px;
-    color: $light-brown;
-    text-align: center;
-    margin-bottom: 12px;
-  }
-  &__title {
-    font-family: $righteous-regular, $sans-serif;
-    font-size: 48px;
-    line-height: 50px;
-    color: $white;
-    text-align: center;
-    margin-bottom: 56px;
-  }
   &__slider{
     display: flex;
     justify-content: space-between;
     margin: 0 -15px;
-    //overflow: hidden;
     &-item{
       background-color: $second-brown;
       width: calc(50% - 20px);
       padding: 40px;
       margin: 0 20px;
+      @include breakpoint($mobile-bp) {
+        padding: 15px;
+      }
     }
   }
   &__top{
     display: flex;
     align-items: center;
     margin-bottom: 28px;
+    @include breakpoint($mobile-bp) {
+      flex-direction: column;
+    }
   }
   &__bottom{
     display: flex;
     justify-content: space-between;
+  }
+  &__avatar{
+    @include breakpoint($mobile-bp) {
+      margin-bottom: 10px;
+    }
   }
   &__text {
     font-family: $urbanist-medium, $sans-serif;
@@ -48,6 +42,10 @@
     opacity: 0.8;
     text-transform: capitalize;
     margin-left: 24px;
+    @include breakpoint($mobile-bp) {
+      text-align: center;
+      margin-left: 0;
+    }
   }
 
   &__name{
@@ -57,6 +55,9 @@
     color: $white;
     text-transform: capitalize;
     margin-bottom: 4px;
+    @include breakpoint($mobile-bp) {
+     font-size: 16px;
+    }
   }
   &__position{
     font-family: $urbanist-medium, $sans-serif;
@@ -90,14 +91,25 @@
     justify-content: center;
     align-items: center;
     transition: stroke, background-color .2s linear;
+
     path {
       stroke: $white;
     }
     &-prev {
       right: 90px;
+      @include breakpoint($mobile-bp) {
+        left: 50%;
+        margin-left: -45px;
+        transform: translate(-50%);;
+      }
     }
     &-next {
       right: 20px;
+      @include breakpoint($mobile-bp) {
+        right: 50%;
+        margin-right: -45px;
+        transform: translate(50%);
+      }
     }
     &:hover{
       background-color: $light-brown;
@@ -110,6 +122,11 @@
     position: absolute;
     bottom: -64px;
     left: 2%;
+    @include breakpoint($mobile-bp) {
+     bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
 }

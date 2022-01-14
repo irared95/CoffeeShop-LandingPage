@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    <section class="hero">
-        <header class="header">
+<section class="hero">
+    <header class="header">
+        <div class="header__menu header__menu--js">
             <nav class="nav header__nav">
                 <ul class="nav__menu">
                     <li class="nav__item">
@@ -36,348 +37,385 @@
                     </li>
                 </ul>
             </nav>
-            <a href="#" class="header__logo logo">
+            <a href="#" class="header__logo logo logo--desktop">
                 <img src="./image/Logo.png" alt="logo">
             </a>
-            <ul class="controls header__controls">
-                <li class="controls__item">
-                    <a class="controls__link header__link" href="#">
-                        <span class="header__text">Pages</span>
-                    </a>
-                </li>
-                <li class="controls__item controls__item--search">
-                    <a class="controls__link header__link" href="#">
-                        <span class="header__text">Shop</span>
-                    </a>
-                </li>
-                <li class="controls__item">
-                    <a class="controls__link header__link" href="#">
-                        <span class="header__text">Contact</span>
-                    </a>
-                </li>
-                <li class="controls__item">
-                    <a class="controls__link header__link" href="#">
+            <nav class="nav header__nav">
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a class="nav__link header__link" href="#">
+                            <span class="nav__text header__text">Pages</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link header__link" href="#">
+                            <span class="nav__text header__text">Shop</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link header__link" href="#">
+                            <span class="nav__text header__text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="nav__item controls--desktop">
+                        <a class="nav__link header__link" href="#">
                         <span class="header__icon">
                         <img src="./image/search.svg" alt="search">
                         </span>
-                    </a>
-                </li>
-                <li class="controls__item">
-                    <a class="controls__link header__link" href="#">
+                        </a>
+                    </li>
+                    <li class="nav__item controls--desktop">
+                        <a class="nav__link header__link" href="#">
                         <span class="header__icon">
                          <img src="./image/shopping-bag.svg" alt="shopping-bag">
                         </span>
-                    </a>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <a href="#" class="header__logo logo logo--mobile">
+            <img src="./image/Logo.png" alt="logo">
+        </a>
+        <ul class="controls header__controls controls--mobile">
+            <li class="controls__item">
+                <a class="controls__link header__link" href="#">
+            <span class="header__icon">
+                <img src="./image/search.svg" alt="search">
+            </span>
+                </a>
+            </li>
+            <li class="controls__item">
+                <a class="controls__link header__link" href="#">
+            <span class="header__icon">
+                <img src="./image/shopping-bag.svg" alt="shopping-bag">
+            </span>
+                </a>
+            </li>
+        </ul>
+        <button class="burger burger--js">&#8801;</button>
+    </header>
+    <div class="hero__wrapper">
+        <div class="container hero__container">
+            <div class="hero__wrap">
+                <h1 class="hero__title">Enjoy Your Morning Coffee.</h1>
+                <div class="hero__text">
+                    <p>The coofee is brewed by fist roasting the green coffee beans over hot coals in brazier. given to
+                        Opportunity</p>
+                </div>
+                <div class="hero__btn">
+                    <a href="#" target="blank" class="btn">Test Coffee</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<main class="main">
+    <section class="instruction">
+        <div class="container">
+            <ul class="instruction__list">
+                <li class="instruction__item">
+                    <div class="instruction__wrap">
+                        <span class="instruction__number">01</span>
+                        <h3 class="instruction__title">Best Coffee Flavour</h3>
+                    </div>
+                    <div class="instruction__image">
+                        <img src="./image/instruction-1.png" alt="coffee">
+                    </div>
+                </li>
+                <li class="instruction__item">
+                    <div class="instruction__wrap">
+                        <span class="instruction__number">02</span>
+                        <h3 class="instruction__title">Place to get lost</h3>
+                    </div>
+                    <div class="instruction__image">
+                        <img src="./image/instruction-2.png" alt="coffee">
+                    </div>
+
+                </li>
+                <li class="instruction__item">
+                    <div class="instruction__wrap">
+                        <span class="instruction__number">03</span>
+                        <h3 class="instruction__title">Proper roesting</h3>
+                    </div>
+                    <div class="instruction__image">
+                        <img src="./image/instruction-3.png" alt="two cup of cofee">
+                    </div>
                 </li>
             </ul>
-        </header>
-        <div class="hero__wrapper">
-            <div class="container hero__container">
-                <div class="hero__wrap">
-                    <h1 class="hero__title">Enjoy Your Morning Coffee.</h1>
-                    <div class="hero__text">
-                        <p>The coofee is brewed by fist roasting the green coffee beans over hot coals in brazier. given to Opportunity</p>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us__grid">
+                <div class="about-us__grid-item-1">
+                    <div class="about-us__image">
+                        <img src="./image/about-us-1.png" alt="coffee">
                     </div>
-                    <div class="hero__btn">
-                        <a href="#" target="blank" class="btn">Test Coffee</a>
+                </div>
+                <div class="about-us__grid-item-2">
+                    <div class="about-us__image">
+                        <img src="./image/about-us-2.png" alt="coffee">
+                    </div>
+                </div>
+                <div class="about-us__grid-item-3">
+                    <div class="about-us__image">
+                        <img src="./image/about-us-3.png" alt="coffee">
+                    </div>
+                </div>
+                <div class="about-us__grid-item-4">
+                    <p class="about-us__subtitle subtitle">Our history</p>
+                    <h2 class="about-us__title title">Create a <br> new story with us</h2>
+                    <div class="about-us__text">
+                        <p>mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a
+                            feyguat urn
+                            maxmaus. cars massa nibhtincidunt. donec et nibh maximus, est eu, mattis nuce. preasent ut
+                            quam quis quam
+                            venen atis fringilla.
+                            morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <main class="main">
-        <section class="instruction">
-            <div class="container">
-                <ul class="instruction__list">
-                    <li class="instruction__item">
-                        <div class="instruction__wrap">
-                            <span class="instruction__number">01</span>
-                            <h3 class="instruction__title">Best Coffee Flavour</h3>
+    <section class="products">
+        <div class="container">
+            <p class="products__subtitle subtitle">Popular Product</p>
+            <h2 class="products__title title">Coffee popular Product</h2>
+            <div class="products__slider products__slider--js">
+                <a href="#" class="products__slider-link">
+                    <div class="products__slider-body">
+                        <div class="products__slider-image">
+                            <img src="./image/product.png" alt="coffee">
                         </div>
-                        <div class="instruction__image">
-                            <img src="./image/instruction-1.png" alt="coffee">
+                        <div class="products__slider-top">
+                            <span class="products__slider-text">Coffee</span>
+                            <ul class="products__stars">
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                            </ul>
                         </div>
+                        <h3 class="products__slider-title">brazil coffee gred</h3>
+                        <div class="products__slider-bottom">
+                            <p class="products__slider-price">Price - <span class="brown"> $320.00/ </span>$358</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="products__slider-link">
+                    <div class="products__slider-body">
+                        <div class="products__slider-image">
+                            <img src="./image/product.png" alt="coffee">
+                        </div>
+                        <div class="products__slider-top">
+                            <span class="products__slider-text">Coffee</span>
+                            <ul class="products__stars">
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="products__slider-title">brazil coffee gred</h3>
+                        <div class="products__slider-bottom">
+                            <p class="products__slider-price">Price - <span class="brown">$320.00/ </span>$358</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="products__slider-link">
+                    <div class="products__slider-body">
+                        <div class="products__slider-image">
+                            <img src="./image/product.png" alt="coffee">
+                        </div>
+                        <div class="products__slider-top">
+                            <span class="products__slider-text">Coffee</span>
+                            <ul class="products__stars">
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="products__slider-title">brazil coffee gred</h3>
+                        <div class="products__slider-bottom">
+                            <p class="products__slider-price">Price - <span class="brown"> $320.00/ </span>$358</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="products__slider-link">
+                    <div class="products__slider-body">
+                        <div class="products__slider-image">
+                            <img src="./image/product.png" alt="coffee">
+                        </div>
+                        <div class="products__slider-top">
+                            <span class="products__slider-text">Coffee</span>
+                            <ul class="products__stars">
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                                <li class="products__stars-item">
+                                    <img src="./image/star.svg" alt="star">
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="products__slider-title">brazil coffee gred</h3>
+                        <div class="products__slider-bottom">
+                            <p class="products__slider-price">Price - <span class="brown">$320.00/ </span>$358</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="products__btn">
+                <a href="#" target="blank" class="btn">View all product</a>
+            </div>
+        </div>
+    </section>
+    <section class="technics">
+        <div class="container technics__container">
+            <div class="technics__wrap">
+                <div class="technics__left">
+                    <div class="technics__image">
+                        <img src="./image/coffee-machine.png" alt="Coffee machine">
+                    </div>
+                </div>
+                <div class="technics__right">
+                    <h2 class="technics__title title">Coffee <br>machine, buy for home</h2>
+                    <div class="technics__text">
+                        <p>mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a
+                            feyguat urn
+                            maxmaus. cars massa nibhtincidunt. donec et nib maximus, est eu, mattis nuce. preasent ut
+                            quam quis quam
+                            venen atis fri ngilla.
+                            morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</p>
+                    </div>
+                    <div class="technics__btn">
+                        <a href="#" target="blank" class="btn">Discover now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container menu__container">
+            <p class="menu__subtitle subtitle brown">Menu</p>
+            <h2 class="menu__title title">Coffee popular menu</h2>
+            <div class="menu__wrap">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <img src="./image/coffee-menu-1.png" alt="coffee">
+                        <p class="menu__text">Americano rosted gred</p>
+                        <span class="menu__price brown">$12:00</span>
                     </li>
-                    <li class="instruction__item">
-                        <div class="instruction__wrap">
-                            <span class="instruction__number">02</span>
-                            <h3 class="instruction__title">Place to get lost</h3>
-                        </div>
-                        <div class="instruction__image">
-                            <img src="./image/instruction-2.png" alt="coffee">
-                        </div>
-
+                    <li class="menu__item">
+                        <img src="./image/coffee-menu-2.png" alt="coffee">
+                        <p class="menu__text">Americano rosted gred</p>
+                        <span class="menu__price brown">$12:00</span>
                     </li>
-                    <li class="instruction__item">
-                        <div class="instruction__wrap">
-                            <span class="instruction__number">03</span>
-                            <h3 class="instruction__title">Proper roesting</h3>
-                        </div>
-                        <div class="instruction__image">
-                            <img src="./image/instruction-3.png" alt="two cup of cofee">
-                        </div>
+                    <li class="menu__item">
+                        <img src="./image/coffee-menu-3.png" alt="coffee">
+                        <p class="menu__text">Americano rosted gred</p>
+                        <span class="menu__price brown">$12:00</span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./image/coffee-menu-4.png" alt="coffee">
+                        <p class="menu__text">Americano rosted gred</p>
+                        <span class="menu__price brown">$12:00</span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./image/coffee-menu-1.png" alt="coffee">
+                        <p class="menu__text">Americano rosted gred</p>
+                        <span class="menu__price brown">$12:00</span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./image/coffee-menu-2.png" alt="coffee">
+                        <p class="menu__text">Americano rosted gred</p>
+                        <span class="menu__price brown">$12:00</span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./image/coffee-menu-3.png" alt="coffee">
+                        <p class="menu__text">Americano rosted gred</p>
+                        <span class="menu__price brown">$12:00</span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./image/coffee-menu-4.png" alt="coffee">
+                        <p class="menu__text">Americano rosted gred</p>
+                        <span class="menu__price brown">$12:00</span>
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="about-us">
-            <div class="container">
-                <div class="about-us__grid">
-                    <div class="about-us__grid-item-1">
-                        <div class="about-us__image">
-                            <img src="./image/about-us-1.png" alt="coffee">
-                        </div>
-                    </div>
-                    <div class="about-us__grid-item-2">
-                        <div class="about-us__image">
-                            <img src="./image/about-us-2.png" alt="coffee">
-                        </div>
-                    </div>
-                    <div class="about-us__grid-item-3">
-                        <div class="about-us__image">
-                            <img src="./image/about-us-3.png" alt="coffee">
-                        </div>
-                    </div>
-                    <div class="about-us__grid-item-4">
-                        <p class="about-us__subtitle">Our history</p>
-                        <h2 class="about-us__title">Create a <br> new story with us</h2>
-                        <div class="about-us__text">
-                            <p>mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nibh maximus, est eu, mattis nuce. preasent ut quam quis quam venen atis fringilla.
-                                morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="products">
-            <div class="container">
-                <p class="products__subtitle">Popular Product</p>
-                <h2 class="products__title">Coffee popular Product</h2>
-                <div class="products__slider products__slider--js">
-                    <a href="#" class="products__slider-link">
-                        <div class="products__slider-body">
-                            <div class="products__slider-image">
-                                <img src="./image/product.png" alt="coffee">
-                            </div>
-                            <div class="products__slider-top">
-                                <span class="products__slider-text">Coffee</span>
-                                <ul class="products__stars">
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="products__slider-title">brazil coffee gred</h3>
-                            <div class="products__slider-bottom">
-                                <p class="products__slider-price">Price - <span class="brown"> $320.00/ </span>$358</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="products__slider-link">
-                        <div class="products__slider-body">
-                            <div class="products__slider-image">
-                                <img src="./image/product.png" alt="coffee">
-                            </div>
-                            <div class="products__slider-top">
-                                <span class="products__slider-text">Coffee</span>
-                                <ul class="products__stars">
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="products__slider-title">brazil coffee gred</h3>
-                            <div class="products__slider-bottom">
-                                <p class="products__slider-price">Price - <span class="brown">$320.00/ </span>$358</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="products__slider-link">
-                        <div class="products__slider-body">
-                            <div class="products__slider-image">
-                                <img src="./image/product.png" alt="coffee">
-                            </div>
-                            <div class="products__slider-top">
-                                <span class="products__slider-text">Coffee</span>
-                                <ul class="products__stars">
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="products__slider-title">brazil coffee gred</h3>
-                            <div class="products__slider-bottom">
-                                <p class="products__slider-price">Price - <span class="brown"> $320.00/ </span>$358</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="products__slider-link">
-                        <div class="products__slider-body">
-                            <div class="products__slider-image">
-                                <img src="./image/product.png" alt="coffee">
-                            </div>
-                            <div class="products__slider-top">
-                                <span class="products__slider-text">Coffee</span>
-                                <ul class="products__stars">
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                    <li class="products__stars-item">
-                                        <img src="./image/star.svg" alt="star">
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="products__slider-title">brazil coffee gred</h3>
-                            <div class="products__slider-bottom">
-                                <p class="products__slider-price">Price - <span class="brown">$320.00/ </span>$358</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="products__btn">
-                    <a href="#" target="blank" class="btn">View all product</a>
-                </div>
-            </div>
-        </section>
-        <section class="technics">
-            <div class="container technics__container">
-                <div class="technics__wrap">
-                    <div class="technics__left">
-                        <div class="technics__image">
-                            <img src="./image/coffee-machine.png" alt="Coffee machine">
-                        </div>
-                    </div>
-                    <div class="technics__right">
-                        <h2 class="technics__title">Coffee <br>machine, buy for home</h2>
-                        <div class="technics__text">
-                            <p>mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nib maximus, est eu, mattis nuce. preasent ut quam quis quam venen atis fri ngilla.
-                                morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</p>
-                        </div>
-                        <div class="technics__btn">
-                            <a href="#" target="blank" class="btn">Discover now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="menu">
-            <div class="container menu__container">
-                <p class="menu__subtitle brown">Menu</p>
-                <h2 class="menu__title">Coffee popular menu</h2>
-                <div class="menu__wrap">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                                <img src="./image/coffee-menu-1.png" alt="coffee">
-                                <p class="menu__text">Americano rosted gred</p>
-                            <span class="menu__price brown">$12:00</span>
-                        </li>
-                        <li class="menu__item">
-                                <img src="./image/coffee-menu-2.png" alt="coffee">
-                                <p class="menu__text">Americano rosted gred</p>
-                            <span class="menu__price brown">$12:00</span>
-                        </li>
-                        <li class="menu__item">
-                                <img src="./image/coffee-menu-3.png" alt="coffee">
-                                <p class="menu__text">Americano rosted gred</p>
-                            <span class="menu__price brown">$12:00</span>
-                        </li>
-                        <li class="menu__item">
-                                <img src="./image/coffee-menu-4.png" alt="coffee">
-                                <p class="menu__text">Americano rosted gred</p>
-                            <span class="menu__price brown">$12:00</span>
-                        </li>
-                        <li class="menu__item">
-                                <img src="./image/coffee-menu-1.png" alt="coffee">
-                                <p class="menu__text">Americano rosted gred</p>
-                            <span class="menu__price brown">$12:00</span>
-                        </li>
-                        <li class="menu__item">
-                                <img src="./image/coffee-menu-2.png" alt="coffee">
-                                <p class="menu__text">Americano rosted gred</p>
-                            <span class="menu__price brown">$12:00</span>
-                        </li>
-                        <li class="menu__item">
-                                <img src="./image/coffee-menu-3.png" alt="coffee">
-                                <p class="menu__text">Americano rosted gred</p>
-                            <span class="menu__price brown">$12:00</span>
-                        </li>
-                        <li class="menu__item">
-                                <img src="./image/coffee-menu-4.png" alt="coffee">
-                                <p class="menu__text">Americano rosted gred</p>
-                            <span class="menu__price brown">$12:00</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="reviews">
+        </div>
+    </section>
+    <section class="reviews">
         <div class="container reviews__container">
-            <p class="reviews__subtitle brown">Testimonial</p>
-            <h2 class="reviews__title">Says our customers</h2>
+            <p class="reviews__subtitle subtitle brown">Testimonial</p>
+            <h2 class="reviews__title title">Says our customers</h2>
             <div class="reviews__slider reviews__slider--js">
                 <div class="reviews__slider-item">
                     <div class="reviews__top">
                         <div class="reviews__avatar">
                             <img src="./image/avatar-1.png" alt="avatar">
                         </div>
-                        <div class="reviews__text">Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</div>
+                        <div class="reviews__text">Education WP is a special build for effective education & Learning
+                            Management
+                            System site. Education WP is the next generation & one of the best education WordPress
+                            themes which all
+                            the strength of eLearning WP..
+                        </div>
                     </div>
                     <div class="reviews__bottom">
                         <div class="reviews__wrap">
@@ -411,7 +449,12 @@
                         <div class="reviews__avatar">
                             <img src="./image/avatar-2.png" alt="avatar">
                         </div>
-                        <div class="reviews__text">Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</div>
+                        <div class="reviews__text">Education WP is a special build for effective education & Learning
+                            Management
+                            System site. Education WP is the next generation & one of the best education WordPress
+                            themes which all
+                            the strength of eLearning WP..
+                        </div>
                     </div>
                     <div class="reviews__bottom">
                         <div class="reviews__wrap">
@@ -445,7 +488,12 @@
                         <div class="reviews__avatar">
                             <img src="./image/avatar-1.png" alt="avatar">
                         </div>
-                        <div class="reviews__text">Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</div>
+                        <div class="reviews__text">Education WP is a special build for effective education & Learning
+                            Management
+                            System site. Education WP is the next generation & one of the best education WordPress
+                            themes which all
+                            the strength of eLearning WP..
+                        </div>
                     </div>
                     <div class="reviews__bottom">
                         <div class="reviews__wrap">
@@ -479,7 +527,12 @@
                         <div class="reviews__avatar">
                             <img src="./image/avatar-1.png" alt="avatar">
                         </div>
-                        <div class="reviews__text">Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</div>
+                        <div class="reviews__text">Education WP is a special build for effective education & Learning
+                            Management
+                            System site. Education WP is the next generation & one of the best education WordPress
+                            themes which all
+                            the strength of eLearning WP..
+                        </div>
                     </div>
                     <div class="reviews__bottom">
                         <div class="reviews__wrap">
@@ -513,7 +566,12 @@
                         <div class="reviews__avatar">
                             <img src="./image/avatar-1.png" alt="avatar">
                         </div>
-                        <div class="reviews__text">Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</div>
+                        <div class="reviews__text">Education WP is a special build for effective education & Learning
+                            Management
+                            System site. Education WP is the next generation & one of the best education WordPress
+                            themes which all
+                            the strength of eLearning WP..
+                        </div>
                     </div>
                     <div class="reviews__bottom">
                         <div class="reviews__wrap">
@@ -547,7 +605,12 @@
                         <div class="reviews__avatar">
                             <img src="./image/avatar-1.png" alt="avatar">
                         </div>
-                        <div class="reviews__text">Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..</div>
+                        <div class="reviews__text">Education WP is a special build for effective education & Learning
+                            Management
+                            System site. Education WP is the next generation & one of the best education WordPress
+                            themes which all
+                            the strength of eLearning WP..
+                        </div>
                     </div>
                     <div class="reviews__bottom">
                         <div class="reviews__wrap">
@@ -578,191 +641,226 @@
                 </div>
             </div>
         </div>
-        </section>
-        <section class="reservation">
-            <div class="container reservation__container">
-                <div class="reservation__wrapper">
-                    <div class="reservation__left"></div>
-                    <div class="reservation__right">
-                        <p class="reservation__subtitle brown">Reservation</p>
-                        <h2 class="reservation__title">Booking a table</h2>
-                        <form class="reservation__form" action="#">
-                            <div class="reservation__field-wrap">
-                                <div class="reservation__field">
-                                    <input name="text" type="text" required placeholder="4 person" class="reservation__input">
-                                </div>
-                                <div class="reservation__field">
-                                    <input name="date" type="text" required placeholder="12.25, 2020" class="reservation__input">
-                                    <!-- ВСТАВИТЬ КАЛЕНДАРЬ ЧЕРЕЗ ЖКВЕРИ http://t1m0n.name/air-datepicker/docs/index-ru.html AIR DATEPICKER -->
-                                </div>
-                                <div class="reservation__field">
-                                    <input name="time" type="text" required placeholder="11:00 AM" class="reservation__input">
-                                </div>
+    </section>
+    <section class="reservation">
+        <div class="container reservation__container">
+            <div class="reservation__wrapper">
+                <div class="reservation__left">
+                    <div class="map reservation__map" id="map"></div>
+                </div>
+                <div class="reservation__right">
+                    <p class="reservation__subtitle subtitle brown">Reservation</p>
+                    <h2 class="reservation__title title">Booking a table</h2>
+                    <form class="reservation__form" action="#">
+                        <div class="reservation__field-wrap">
+                            <div class="reservation__field">
+                                <input name="text" type="text" required placeholder="4 person"
+                                       class="reservation__input">
                             </div>
-                            <button class="reservation__btn btn" type="submit">BOOK S TABLE</button>
-                        </form>
+                            <div class="reservation__field">
+                                <input name="date" type="text" required placeholder="12.25, 2020"
+                                       class="reservation__input">
+                                <!-- ВСТАВИТЬ КАЛЕНДАРЬ ЧЕРЕЗ ЖКВЕРИ http://t1m0n.name/air-datepicker/docs/index-ru.html AIR DATEPICKER -->
+                            </div>
+                            <div class="reservation__field">
+                                <input name="time" type="text" required placeholder="11:00 AM"
+                                       class="reservation__input">
+                            </div>
+                        </div>
+                        <button class="reservation__btn btn" type="submit">BOOK S TABLE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container news__container">
+            <p class="news__subtitle subtitle brown">Testimonial</p>
+            <h2 class="news__title title">Our latest news</h2>
+            <div class="news__slider news__slider--js">
+                <a href="#" class="news__slider-link">
+                    <div class="news__slider-body">
+                        <div class="news__slider-image">
+                            <img src="./image/news-1.png" alt="coffee">
+                        </div>
+                        <div class="news__wrap">
+                            <div class="news__slider-top">
+                                <p class="news__by"><span class="brown">By:</span> rasaline</p>
+                                <p class="news__date">23.01.2021</p>
+                            </div>
+                            <h3 class="news__slider-title">Ideal cocktails from barmen....</h3>
+                            <div class="news__slider-bottom">
+                                <span class="news__more">Read More</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" stroke="#C99E71" width="24" height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M1 12.0001L19 12.0001" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M12 5.00012L19 12.0001L12 19.0001" stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="news">
-            <div class="container news__container">
-                <p class="news__subtitle brown">Testimonial</p>
-                <h2 class="news__title">Our latest news</h2>
-                <div class="news__slider news__slider--js">
-                    <a href="#" class="news__slider-link">
-                        <div class="news__slider-body">
-                            <div class="news__slider-image">
-                                <img src="./image/news-1.png" alt="coffee">
-                            </div>
-                            <div class="news__wrap">
-                                <div class="news__slider-top">
-                                    <p class="news__by"> <span class="brown">By:</span> rasaline</p>
-                                    <p class="news__date">23.01.2021</p>
-                                </div>
-                                <h3 class="news__slider-title">Ideal cocktails from barmen....</h3>
-                                <div class="news__slider-bottom">
-                                    <span class="news__more">Read More</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" stroke="#C99E71" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M1 12.0001L19 12.0001"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 5.00012L19 12.0001L12 19.0001"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="news__slider-link">
-                        <div class="news__slider-body">
-                            <div class="news__slider-image">
-                                <img src="./image/news-2.png" alt="coffee">
-                            </div>
-                            <div class="news__wrap">
-                                <div class="news__slider-top">
-                                    <p class="news__by"> <span class="brown">By:</span> rasaline</p>
-                                    <p class="news__date">23.01.2021</p>
-                                </div>
-                                <h3 class="news__slider-title">Ideal cocktails from barmen....</h3>
-                                <div class="news__slider-bottom">
-                                    <span class="news__more">Read More</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" stroke="#C99E71" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M1 12.0001L19 12.0001"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 5.00012L19 12.0001L12 19.0001"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="news__slider-link">
-                        <div class="news__slider-body">
-                            <div class="news__slider-image">
-                                <img src="./image/news-3.png" alt="coffee">
-                            </div>
-                            <div class="news__wrap">
-                                <div class="news__slider-top">
-                                    <p class="news__by"> <span class="brown">By:</span> rasaline</p>
-                                    <p class="news__date">23.01.2021</p>
-                                </div>
-                                <h3 class="news__slider-title">Ideal cocktails from barmen....</h3>
-                                <div class="news__slider-bottom">
-                                    <span class="news__more">Read More</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" stroke="#C99E71" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M1 12.0001L19 12.0001"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 5.00012L19 12.0001L12 19.0001"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="news__slider-link">
-                        <div class="news__slider-body">
-                            <div class="news__slider-image">
-                                <img src="./image/news-3.png" alt="coffee">
-                            </div>
-                            <div class="news__wrap">
-                                <div class="news__slider-top">
-                                    <p class="news__by"> <span class="brown">By:</span> rasaline</p>
-                                    <p class="news__date">23.01.2021</p>
-                                </div>
-                                <h3 class="news__slider-title">Ideal cocktails from barmen....</h3>
-                                <div class="news__slider-bottom">
-                                    <span class="news__more">Read More</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" stroke="#C99E71" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M1 12.0001L19 12.0001"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 5.00012L19 12.0001L12 19.0001"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__wrap">
-                <a href="#" class="footer__logo logo">
-                    <img src="./image/Logo.png" alt="logo">
                 </a>
-                <nav class="nav footer__nav">
-                    <ul class="nav__menu">
-                        <li class="nav__item">
-                            <a class="nav__link footer__link" href="#">
-                                <span class="nav__text footer__text">Home</span>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link footer__link" href="#">
-                                <span class="nav__text footer__text">Reservation</span>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link footer__link" href="#">
-                                <span class="nav__text footer__text">Menu</span>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link footer__link" href="#">
-                                <span class="nav__text footer__text">About</span>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link footer__link" href="#">
-                                <span class="nav__text footer__text">Pages</span>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link footer__link" href="#">
-                                <span class="nav__text footer__text">Shop</span>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link footer__link" href="#">
-                                <span class="nav__text footer__text">Blogs</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <form class="footer__form" action="#">
-                    <div class="footer__field-wrap">
-                        <div class="footer__field">
-                            <input name="text" type="email" required placeholder="Enter your email" class="footer__input">
+                <a href="#" class="news__slider-link">
+                    <div class="news__slider-body">
+                        <div class="news__slider-image">
+                            <img src="./image/news-2.png" alt="coffee">
+                        </div>
+                        <div class="news__wrap">
+                            <div class="news__slider-top">
+                                <p class="news__by"><span class="brown">By:</span> rasaline</p>
+                                <p class="news__date">23.01.2021</p>
+                            </div>
+                            <h3 class="news__slider-title">Ideal cocktails from barmen....</h3>
+                            <div class="news__slider-bottom">
+                                <span class="news__more">Read More</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" stroke="#C99E71" width="24" height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M1 12.0001L19 12.0001" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M12 5.00012L19 12.0001L12 19.0001" stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                    <button class="footer__btn" type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" stroke="white" width="24" height="24" viewBox="0 0 24 24" fill="none">\n' +
-                            '\t<path d="M1 12.0001L19 12.0001" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>\n' +
-                            '\t<path d="M12 5.00012L19 12.0001L12 19.0001" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>\n' +
-                            '</svg>
-                    </button>
-                </form>
+                </a>
+                <a href="#" class="news__slider-link">
+                    <div class="news__slider-body">
+                        <div class="news__slider-image">
+                            <img src="./image/news-3.png" alt="coffee">
+                        </div>
+                        <div class="news__wrap">
+                            <div class="news__slider-top">
+                                <p class="news__by"><span class="brown">By:</span> rasaline</p>
+                                <p class="news__date">23.01.2021</p>
+                            </div>
+                            <h3 class="news__slider-title">Ideal cocktails from barmen....</h3>
+                            <div class="news__slider-bottom">
+                                <span class="news__more">Read More</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" stroke="#C99E71" width="24" height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M1 12.0001L19 12.0001" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M12 5.00012L19 12.0001L12 19.0001" stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="news__slider-link">
+                    <div class="news__slider-body">
+                        <div class="news__slider-image">
+                            <img src="./image/news-3.png" alt="coffee">
+                        </div>
+                        <div class="news__wrap">
+                            <div class="news__slider-top">
+                                <p class="news__by"><span class="brown">By:</span> rasaline</p>
+                                <p class="news__date">23.01.2021</p>
+                            </div>
+                            <h3 class="news__slider-title">Ideal cocktails from barmen....</h3>
+                            <div class="news__slider-bottom">
+                                <span class="news__more">Read More</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" stroke="#C99E71" width="24" height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M1 12.0001L19 12.0001" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M12 5.00012L19 12.0001L12 19.0001" stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="footer__copyright">
-            <span class="footer__copyright-text">e-Tennis &copy; 2021. All rights reserved.</span>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__wrap">
+            <a href="#" class="footer__logo logo">
+                <img src="./image/Logo.png" alt="logo">
+            </a>
+            <nav class="nav footer__nav">
+                <ul class="nav__menu footer__menu">
+                    <li class="nav__item footer__item">
+                        <a class="nav__link footer__link" href="#">
+                            <span class="nav__text footer__text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item footer__item">
+                        <a class="nav__link footer__link" href="#">
+                            <span class="nav__text footer__text">Reservation</span>
+                        </a>
+                    </li>
+                    <li class="nav__item footer__item">
+                        <a class="nav__link footer__link" href="#">
+                            <span class="nav__text footer__text">Menu</span>
+                        </a>
+                    </li>
+                    <li class="nav__item footer__item">
+                        <a class="nav__link footer__link" href="#">
+                            <span class="nav__text footer__text">About</span>
+                        </a>
+                    </li>
+                    <li class="nav__item footer__item">
+                        <a class="nav__link footer__link" href="#">
+                            <span class="nav__text footer__text">Pages</span>
+                        </a>
+                    </li>
+                    <li class="nav__item footer__item">
+                        <a class="nav__link footer__link" href="#">
+                            <span class="nav__text footer__text">Shop</span>
+                        </a>
+                    </li>
+                    <li class="nav__item footer__item">
+                        <a class="nav__link footer__link" href="#">
+                            <span class="nav__text footer__text">Blogs</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer__form" action="#">
+                <div class="footer__field-wrap">
+                    <div class="footer__field">
+                        <input name="text" type="email" required placeholder="Enter your email" class="footer__input">
+                    </div>
+                </div>
+                <button class="footer__btn" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" stroke="white" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none">
+                        \n' +
+                        '\t
+                        <path d="M1 12.0001L19 12.0001" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        \n' +
+                        '\t
+                        <path d="M12 5.00012L19 12.0001L12 19.0001" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        \n' +
+                        '
+                    </svg>
+                </button>
+            </form>
         </div>
-    </footer>
-    <script src="js/script.js"></script>
+    </div>
+    <div class="footer__copyright">
+        <span class="footer__copyright-text">e-Tennis &copy; 2021. All rights reserved.</span>
+    </div>
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPRKvahBs7bxZF4oFzd4o7RtUWBhykPD8"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

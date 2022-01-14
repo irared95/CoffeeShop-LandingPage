@@ -1,13 +1,25 @@
 .instruction {
     background-color: $dark-brown;
     padding: 140px 0 70px;
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+        padding: 70px 0;
+    }
     &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__item {
         width: 31%;
+        @include breakpoint($mobile-bp) {
+          margin-bottom: 20px;
+            width: 100%;
+        }
     }
     img {
         display: block;
@@ -15,6 +27,10 @@
     }
     &__wrap {
         margin-bottom: 24px;
+        white-space: nowrap;
+        @include breakpoint($mobile-bp) {
+            text-align: center;
+        }
     }
     &__number {
         display: inline-block;
@@ -31,5 +47,9 @@
         line-height: 26px;
         color: white;
         letter-spacing: 2px;
+        @include breakpoint($tablet-bp) {
+           font-size: 16px;
+            line-height: 18px;
+        }
     }
 }

@@ -562,6 +562,13 @@ body {
 .btn:hover {
   opacity: 0.8;
 }
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 20px 15px;
+  }
+}
 
 .footer {
   padding: 70px 0 0 0;
@@ -572,6 +579,11 @@ body {
   align-items: center;
   margin-bottom: 72px;
 }
+@media screen and (max-width: 1024px) {
+  .footer__wrap {
+    flex-direction: column;
+  }
+}
 .footer__container {
   max-width: 1200px;
 }
@@ -581,11 +593,36 @@ body {
   align-items: center;
 }
 .footer__link {
-  padding: 31px 22px;
-  display: inline-block;
+  padding: 31px 19px;
+  display: block;
 }
-.footer__logo {
-  margin-right: 15px;
+@media screen and (max-width: 1024px) {
+  .footer__link {
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__link {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__item, .footer__logo {
+    margin-bottom: 20px;
+  }
+}
+.footer__nav {
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .footer__nav {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__menu {
+    flex-direction: column;
+  }
 }
 .footer__text {
   font-size: 18px;
@@ -605,7 +642,7 @@ body {
   width: 100%;
   background-color: #1C1814;
   border-radius: 36px;
-  padding: 25px 52px 25px;
+  padding: 25px 44px 25px;
   font-size: 18px;
   font-family: "Urbanist SemiBold";
   line-height: 18px;
@@ -654,21 +691,24 @@ body {
 
 .header {
   background-color: #14110E;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
 }
 .header__nav, .header__controls {
   width: 50%;
 }
-.header__controls {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 .header__link {
   padding: 31px 22px;
   display: inline-block;
+}
+@media screen and (max-width: 1024px) {
+  .header__link {
+    padding: 15px 22px;
+  }
 }
 .header__text {
   font-size: 18px;
@@ -680,19 +720,115 @@ body {
 .header__text:hover {
   color: #C99E71;
 }
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu.active {
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .header__menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: black;
+  }
+}
 
 .nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav__menu {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .nav__menu {
+    flex-direction: column;
+  }
 }
 .nav__text {
   font-size: 18px;
   font-family: "Inter Regular", sans-serif;
   color: #fff;
   line-height: 22px;
+}
+
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .burger {
+    display: block;
+    color: #fff;
+    font-size: 55px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 6;
+  }
+}
+.logo {
+  display: block;
+}
+.logo--mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .logo--mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .logo--desktop {
+    display: none;
+  }
+}
+
+.controls--mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .controls--mobile {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .controls--desktop {
+    display: none;
+  }
+}
+
+.title {
+  font-family: "Righteous Regular";
+  font-size: 48px;
+  line-height: 62px;
+  color: #fff;
+  margin-bottom: 36px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+
+.subtitle {
+  font-family: "Urbanist SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #C99E71;
+  text-align: center;
+  margin-bottom: 12px;
 }
 
 .hero {
@@ -718,6 +854,12 @@ body {
   margin-bottom: 32px;
   letter-spacing: 3px;
 }
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 45px;
+    line-height: 58px;
+  }
+}
 .hero__text {
   font-family: "Urbanist Medium", sans-serif;
   font-size: 20px;
@@ -730,13 +872,31 @@ body {
   background-color: #14110E;
   padding: 140px 0 70px;
 }
+@media screen and (max-width: 768px) {
+  .instruction {
+    flex-direction: column;
+    padding: 70px 0;
+  }
+}
 .instruction__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+@media screen and (max-width: 768px) {
+  .instruction__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .instruction__item {
   width: 31%;
+}
+@media screen and (max-width: 768px) {
+  .instruction__item {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 .instruction img {
   display: block;
@@ -744,6 +904,12 @@ body {
 }
 .instruction__wrap {
   margin-bottom: 24px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .instruction__wrap {
+    text-align: center;
+  }
 }
 .instruction__number {
   display: inline-block;
@@ -761,6 +927,12 @@ body {
   color: white;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 1024px) {
+  .instruction__title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
 
 .about-us {
   padding: 70px 0;
@@ -773,14 +945,41 @@ body {
   grid-row-gap: 32px;
   justify-content: center;
 }
+@media screen and (max-width: 1024px) {
+  .about-us__grid {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us__grid {
+    display: block;
+  }
+}
 .about-us__grid-item-1 {
   grid-area: 1/1/2/2;
+}
+@media screen and (max-width: 768px) {
+  .about-us__grid-item-1 {
+    display: none;
+  }
 }
 .about-us__grid-item-2 {
   grid-area: 2/1/3/2;
 }
+@media screen and (max-width: 768px) {
+  .about-us__grid-item-2 {
+    display: none;
+  }
+}
 .about-us__grid-item-3 {
   grid-area: 1/2/3/3;
+}
+@media screen and (max-width: 768px) {
+  .about-us__grid-item-3 {
+    display: none;
+  }
 }
 .about-us__grid-item-4 {
   grid-area: 1/3/3/4;
@@ -790,23 +989,22 @@ body {
   background-color: #1C1814;
   padding: 25px 52px;
 }
+@media screen and (max-width: 1024px) {
+  .about-us__grid-item-4 {
+    grid-area: 3/1/5/3;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-us__grid-item-4 {
+    padding: 25px 10px;
+  }
+}
 .about-us img {
   display: block;
   width: 100%;
 }
-.about-us__subtitle {
-  font-family: "Urbanist SemiBold";
-  font-size: 18px;
-  line-height: 20px;
-  color: #C99E71;
-  margin-bottom: 12px;
-}
-.about-us__title {
-  font-family: "Righteous Regular";
-  font-size: 48px;
-  line-height: 62px;
-  color: #fff;
-  margin-bottom: 36px;
+.about-us__subtitle, .about-us__title {
+  text-align: start;
 }
 .about-us__text {
   font-family: "Urbanist Medium";
@@ -818,24 +1016,6 @@ body {
 
 .products {
   padding: 70px 0;
-}
-.products__subtitle {
-  font-family: "Urbanist SemiBold", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  color: #C99E71;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 12px;
-}
-.products__title {
-  font-family: "Righteous Regular", sans-serif;
-  font-size: 48px;
-  line-height: 50px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 56px;
 }
 .products__slider {
   display: flex;
@@ -857,6 +1037,13 @@ body {
 .products__slider-body {
   text-align: center;
   padding: 48px 48px 40px;
+}
+@media screen and (max-width: 768px) {
+  .products__slider-body {
+    font-size: 30px;
+    line-height: 32px;
+    padding: 0;
+  }
 }
 .products__slider-image {
   margin-bottom: 38px;
@@ -886,6 +1073,11 @@ body {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .products__slider-title {
+    font-size: 20px;
+  }
 }
 .products__slider-price {
   font-family: "Inter Regular", sans-serif;
@@ -934,25 +1126,43 @@ body {
   padding: 70px 0;
   background-color: #1C1814;
 }
+@media screen and (max-width: 768px) {
+  .technics__wrap {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
 .technics__right {
   padding-left: 100px;
   max-width: 638px;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .technics__right {
+    padding-left: 0;
+    text-align: center;
+  }
+}
 .technics__image {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .technics__image {
+    margin-bottom: 25px;
+  }
 }
 .technics__image img {
   display: block;
   width: 100%;
 }
 .technics__title {
-  font-family: "Righteous Regular";
-  font-size: 48px;
-  line-height: 50px;
-  color: #fff;
-  margin-bottom: 36px;
+  text-align: start;
+}
+@media screen and (max-width: 768px) {
+  .technics__title {
+    text-align: center;
+  }
 }
 .technics__text {
   font-family: "Urbanist Medium";
@@ -972,22 +1182,6 @@ body {
 .menu__container {
   max-width: 1200px;
 }
-.menu__subtitle {
-  font-family: "Urbanist SemiBold", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  color: #C99E71;
-  text-align: center;
-  margin-bottom: 12px;
-}
-.menu__title {
-  font-family: "Righteous Regular", sans-serif;
-  font-size: 48px;
-  line-height: 50px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 56px;
-}
 .menu__text {
   font-family: "Righteous Regular", sans-serif;
   font-size: 24px;
@@ -996,11 +1190,24 @@ body {
   margin-left: 20px;
   margin-right: auto;
 }
+@media screen and (max-width: 768px) {
+  .menu__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 12px;
+  }
+}
 .menu__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 42px;
   grid-row-gap: 36px;
+}
+@media screen and (max-width: 768px) {
+  .menu__list {
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+  }
 }
 .menu__item {
   display: flex;
@@ -1009,28 +1216,17 @@ body {
   border: 1px solid #32323D;
   padding: 24px;
 }
+@media screen and (max-width: 768px) {
+  .menu__item {
+    padding: 12px;
+  }
+}
 
 .reviews {
   padding: 70px 0;
 }
 .reviews__container {
   max-width: 1200px;
-}
-.reviews__subtitle {
-  font-family: "Urbanist SemiBold", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  color: #C99E71;
-  text-align: center;
-  margin-bottom: 12px;
-}
-.reviews__title {
-  font-family: "Righteous Regular", sans-serif;
-  font-size: 48px;
-  line-height: 50px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 56px;
 }
 .reviews__slider {
   display: flex;
@@ -1043,14 +1239,29 @@ body {
   padding: 40px;
   margin: 0 20px;
 }
+@media screen and (max-width: 768px) {
+  .reviews__slider-item {
+    padding: 15px;
+  }
+}
 .reviews__top {
   display: flex;
   align-items: center;
   margin-bottom: 28px;
 }
+@media screen and (max-width: 768px) {
+  .reviews__top {
+    flex-direction: column;
+  }
+}
 .reviews__bottom {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    margin-bottom: 10px;
+  }
 }
 .reviews__text {
   font-family: "Urbanist Medium", sans-serif;
@@ -1061,6 +1272,12 @@ body {
   text-transform: capitalize;
   margin-left: 24px;
 }
+@media screen and (max-width: 768px) {
+  .reviews__text {
+    text-align: center;
+    margin-left: 0;
+  }
+}
 .reviews__name {
   font-family: "Urbanist Medium", sans-serif;
   font-size: 18px;
@@ -1068,6 +1285,11 @@ body {
   color: #fff;
   text-transform: capitalize;
   margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__name {
+    font-size: 16px;
+  }
 }
 .reviews__position {
   font-family: "Urbanist Medium", sans-serif;
@@ -1108,8 +1330,22 @@ body {
 .reviews__arrow-prev {
   right: 90px;
 }
+@media screen and (max-width: 768px) {
+  .reviews__arrow-prev {
+    left: 50%;
+    margin-left: -45px;
+    transform: translate(-50%);
+  }
+}
 .reviews__arrow-next {
   right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__arrow-next {
+    right: 50%;
+    margin-right: -45px;
+    transform: translate(50%);
+  }
 }
 .reviews__arrow:hover {
   background-color: #C99E71;
@@ -1122,6 +1358,13 @@ body {
   bottom: -64px;
   left: 2%;
 }
+@media screen and (max-width: 768px) {
+  .reviews__dots {
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 .reservation {
   padding: 70px 0;
@@ -1129,38 +1372,41 @@ body {
 .reservation__container {
   max-width: 1200px;
 }
-.reservation__subtitle {
-  font-family: "Urbanist SemiBold", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  color: #C99E71;
-  text-align: center;
-  margin-bottom: 12px;
-}
-.reservation__title {
-  font-family: "Righteous Regular", sans-serif;
-  font-size: 48px;
-  line-height: 50px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 56px;
-}
 .reservation__wrapper {
   background-color: #1C1814;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .reservation__wrapper {
+    flex-direction: column;
+    justify-content: normal;
+  }
+}
 .reservation__left {
-  background-image: url(/image/map.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .reservation__left {
+    height: 400px;
+    width: 100%;
+  }
+}
+.reservation__map {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 .reservation__right {
   padding: 72px 48px;
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .reservation__right {
+    width: 100%;
+    padding: 35px 5px;
+  }
 }
 .reservation__field:not(:last-child) {
   margin-bottom: 24px;
@@ -1199,6 +1445,9 @@ body {
 .news__wrap {
   padding: 24px;
 }
+.news__container {
+  max-width: 1200px;
+}
 .news__subtitle {
   font-family: "Urbanist SemiBold", sans-serif;
   font-size: 18px;
@@ -1216,6 +1465,12 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 56px;
+}
+@media screen and (max-width: 768px) {
+  .news__title {
+    font-size: 30px;
+    line-height: 32px;
+  }
 }
 .news__slider {
   display: flex;

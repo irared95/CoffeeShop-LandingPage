@@ -19,6 +19,10 @@
         color: $white;
         margin-bottom: 32px;
         letter-spacing: 3px;
+        @include breakpoint($mobile-bp) {
+            font-size: 45px;
+            line-height: 58px;
+        }
     }
     &__text {
         font-family: $urbanist-medium, $sans-serif;

@@ -5,6 +5,9 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 72px;
+    @include breakpoint($tablet-bp) {
+     flex-direction: column;
+    }
   }
   &__container {
     max-width: 1200px;
@@ -15,12 +18,32 @@
     align-items: center;
   }
   &__link {
-    padding: 31px 22px;
-    display: inline-block;
+    padding: 31px 19px;
+    display: block;
+    @include breakpoint($tablet-bp) {
+      padding: 20px 20px;
+    }
+    @include breakpoint($mobile-bp) {
+      padding: 0;
+    }
   }
+  &__item,
   &__logo{
-    margin-right: 15px;
+    @include breakpoint($mobile-bp) {
+      margin-bottom: 20px;
+    }
   }
+  &__nav{
+    margin-right: auto;
+    @include breakpoint($tablet-bp) {
+    margin-right: 0;
+    }
+  }
+&__menu{
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
+  }
+}
   &__text {
     font-size: 18px;
     font-family: $inter-regular, $sans-serif;
@@ -39,7 +62,7 @@
     width: 100%;
     background-color: $second-brown;
     border-radius: 36px;
-    padding: 25px 52px 25px;
+    padding: 25px 44px 25px;
     font-size: 18px;
     font-family: $urbanist-semiBold;
     line-height: 18px;

@@ -3,6 +3,9 @@
   &__wrap{
     padding: 24px;
   }
+  &__container{
+    max-width: 1200px;
+  }
   &__subtitle {
     font-family: $urbanist-semiBold, $sans-serif;
     font-size: 18px;
@@ -20,6 +23,10 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 56px;
+    @include breakpoint($mobile-bp) {
+      font-size: 30px;
+      line-height: 32px;
+    }
   }
 
   &__slider {

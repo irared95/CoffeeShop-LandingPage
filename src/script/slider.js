@@ -6,6 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
         autoplay: false,
         speed: 300,
         arrows: false,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     //slider reviews
@@ -40,6 +53,21 @@ document.addEventListener('DOMContentLoaded', function() {
         responsive: [{
             breakpoint: 1024,
             settings: {
+                slidesToShow: 1
+            }
+        }
+        ]
+    })
+
+    $('.news__slider--js').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        speed: 300,
+        arrows: false,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
                 slidesToShow: 3
             }
         },
@@ -56,14 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         ]
-    })
-
-    $('.news__slider--js').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        speed: 300,
-        arrows: false,
     });
 
 });

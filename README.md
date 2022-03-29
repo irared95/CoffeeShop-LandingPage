@@ -1,5 +1,5 @@
 # CoffeeShop-LandingPage
-[CoffeeShop-LandingPage](https://irared95.github.io/CoffeeShop-LandingPage/index.html)
+[CoffeeShop-LandingPage](https://irared95.github.io/CoffeeShop-LandingPage/src/index.html)
 
 
 gulp - запуск проекта в режиме разработчика
